@@ -157,3 +157,51 @@ ul li {
     width: 60%;
     float: right;
 }
+
+/* Membership plans  */
+
+.membership h2 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.membership-plans {
+    margin: 0 5% 0 5%;
+    height: 40rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.membership-plan {
+    height: 90%;
+    width: 30%;
+    background-color: grey;
+    border: solid black 2px;
+}
+
+.membership-plan-title h2 {
+    text-align: center;
+    height: 3.5rem;
+    line-height: 2.5rem;
+}
+
+.fa-star {
+    color: gold;
+    font-size: 1rem;
+    padding: 1rem 0 2rem 0;
+}
+
+
+.membership-plan-details ul {
+    list-style: none;  /* Removes default bullets */
+    display: flex;
+    flex-direction: column; /* Keeps items in a vertical line */
+    gap: 0.5rem;  /* Adds spacing between list items */
+}
+
+.membership-plan-details ul li {
+    display: flex;
+    align-items: center;  /* Ensures text and icons are aligned */
+    gap: 0.5rem;  /* Creates space between ✅ and text */
+    font-size: 1rem;  /* Adjust as needed */
+}
