@@ -32,6 +32,7 @@ a {
 
 a:hover {
     background: linear-gradient(to right, blue, red);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
@@ -62,7 +63,7 @@ ul li {
     transition: background 0.3s ease-in-out;
 }
 
-.btn button {
+button {
     height: 2rem;
     width: 8rem;
     font-weight: bold;
@@ -92,6 +93,7 @@ ul li {
     scale: 1.05;        
     transition: color 0.3s ease-in-out;
     color: white;
+    background-clip: text;
     -webkit-background-clip: border-box;
     -webkit-text-fill-color: initial;
 }
@@ -161,7 +163,7 @@ ul li {
 /* Membership plans  */
 
 .membership h2 {
-    padding-top: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -169,20 +171,25 @@ ul li {
     margin: 0 5% 0 5%;
     height: 40rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border-bottom: 2px solid #f8f8f8;
+    border-radius: 1rem;
 }
 
 .membership-plan {
-    height: 90%;
+    height: auto;
+    margin-top: 2rem;
     width: 30%;
-    background-color: grey;
-    border: solid black 2px;
+    border: 2px solid #f8f8f8;
+    border-radius: 1rem;
 }
 
-.membership-plan-title h2 {
-    text-align: center;
-    height: 3.5rem;
-    line-height: 2.5rem;
+.membership-plan:hover {  
+    border: 3px solid #f9f9f9;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark grey drop shadow */
 }
 
 .fa-star {
@@ -193,15 +200,35 @@ ul li {
 
 
 .membership-plan-details ul {
-    list-style: none;  /* Removes default bullets */
+    list-style: none;  
     display: flex;
-    flex-direction: column; /* Keeps items in a vertical line */
-    gap: 0.5rem;  /* Adds spacing between list items */
+    flex-direction: column;
+    gap: 0.5rem;  
 }
 
 .membership-plan-details ul li {
     display: flex;
-    align-items: center;  /* Ensures text and icons are aligned */
-    gap: 0.5rem;  /* Creates space between ✅ and text */
-    font-size: 1rem;  /* Adjust as needed */
+    align-items: center;  
+    gap: 0.5rem;  
+    font-size: 1rem; 
+}
+
+.fa-circle-arrow-right {
+    color: green;
+    font-size: 1rem;
+}
+
+.membership-plan-price {
+    margin:2rem 0 2rem 0;
+    border-radius: 1rem;
+}
+
+.membership-plan-price button {
+    background-color: grey;
+    width: auto;
+    padding: 0 0.5rem 0 0.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-weight: bolder;
+    border-radius: 2rem;
 }
