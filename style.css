@@ -10,11 +10,13 @@ h1 {
     font-family: "Bebas Neue";
     font-size: 2rem;
     margin: 1rem 0;
+    color: #1a3066;
 }
 
 h2 {    
     font-family: "Roboto";
     font-size: 1.5rem;
+    color:#1a3066;
 }
 
 p {
@@ -55,47 +57,23 @@ ul li {
     justify-content: center;
 }
 
-.btn {
-    display: inline-block;
-    background: linear-gradient(to right, rgba(0, 0, 255, 0.75), rgba(255, 0, 0, 0.85)); 
-    padding: 0.5rem;
-    border-radius: 2rem;
-    transition: background 0.3s ease-in-out;
-}
-
 button {
     height: 2rem;
     width: 8rem;
     font-weight: bold;
-    border: none;
-    background: transparent;
+    border: 2px solid black;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
+    line-height: 2rem;
+    color: #1a3066;
 }
 
 .btn a {
-    color: white;
-    display: block;
+    color: black;
     line-height: 2rem;
     text-align: center;
-    background: transparent;
     transition: color 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.btn:hover {
-    background: linear-gradient(to right, rgba(0, 0, 255, 1), rgba(255, 0, 0, 1)); /* Full opacity on hover */
-    color: white;
-}
-
-.btn a:hover {
-    scale: 1.05;        
-    transition: color 0.3s ease-in-out;
-    color: white;
-    background-clip: text;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: initial;
 }
 
 /* To remove the Scroll bar */
@@ -152,6 +130,10 @@ button {
 .about-us-left {
     width: 40%;
     float: left;
+    height: 100%;
+    background-image: url(Assets/profic.jpg);
+    background-size: cover;
+    scale: 0.8;
 }
 
 
@@ -173,8 +155,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: baseline;
-    border-bottom: 2px solid #f8f8f8;
-    border-radius: 1rem;
 }
 
 .membership-plan {
@@ -220,15 +200,116 @@ button {
 
 .membership-plan-price {
     margin:2rem 0 2rem 0;
-    border-radius: 1rem;
 }
 
 .membership-plan-price button {
-    background-color: grey;
     width: auto;
     padding: 0 0.5rem 0 0.5rem;
     height: 3rem;
     line-height: 3rem;
     font-weight: bolder;
-    border-radius: 2rem;
+}
+
+/* FAQs */
+
+.faq-sec {
+    margin-bottom: 3rem;
+}
+
+.faq-title {
+    color: #1a3066;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.faq-title h2 {
+    margin: 1rem 0 1rem 0;
+}
+
+.faq-item {
+    width: 60%;
+    margin: 0 20% 0 20%;
+    min-width: 350px;
+    margin-top: 1rem;
+    border: 3px solid #f9f9f9;
+    border-radius: 1rem;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.item-question {
+    background: white;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.question-text {
+    display: inline-block;
+    text-align: left;
+}
+
+.arrows-container {
+    margin: 0.4rem;
+    text-align: right;
+}
+
+.item-answer {
+    display: none;
+    color: black;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.close {
+    display: none;
+}
+
+.show-answer .item-answer {
+    display: block;
+    height: auto;
+}
+
+.show-answer .item-question {
+    background: white;
+}
+
+.show-answer .expand {
+    display: none;
+}
+
+.show-answer .close {
+    display: inline;
+}
+
+.faq-btn button {
+    height: 2.5rem;
+    width: 15rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+
+.footer-sec {
+    margin: 0 5% 2rem 5%;
+    height: 20rem;
+    display: flex;
+}
+
+.footer-left {
+    width: 35%;
+    background-color: bisque;
+}
+
+.footer-right {
+    width: 65%;
+    background-color: beige;
 }
