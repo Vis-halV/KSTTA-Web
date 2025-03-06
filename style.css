@@ -17,6 +17,7 @@ h2 {
     font-family: "Roboto";
     font-size: 1.5rem;
     color:#1a3066;
+    text-align: center;
 }
 
 p {
@@ -143,7 +144,6 @@ button {
 }
 
 /* Membership plans  */
-
 .membership h2 {
     margin-top: 1rem;
     text-align: center;
@@ -208,6 +208,44 @@ button {
     height: 3rem;
     line-height: 3rem;
     font-weight: bolder;
+}
+
+/* Gallery */
+.gallery-sec{
+    height: auto;
+    width: 90%;
+    margin: 0 5% 3rem 5%;
+}
+
+.gallery-container {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    height: 20rem;
+    width: 30%;
+    margin: 1%;
+}
+
+.gallery-img {
+    height: 20rem;
+    width: 30%;
+    background-size: cover;
+}
+
+/* Testimonials  */
+.testimonials {
+    margin: 0 5% 0 5%;
+    height: 40rem;
+}
+
+.testimonials-container {
+    height: 35rem;
+    width: 100%;
+    background-color: grey;
 }
 
 /* FAQs */
