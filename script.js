@@ -97,6 +97,10 @@ function updateGallery() {
         imgElement.src = imgSrc;
         galleryContainer.appendChild(imgElement);
     });
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> fix/flex-alignment-issue
