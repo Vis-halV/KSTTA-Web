@@ -1,2 +1,0 @@
-# KSTTA-Web
-Static Webpage
