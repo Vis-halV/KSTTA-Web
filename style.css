@@ -2,31 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
     color: black;
+    font-family: "Roboto";
 }
 
-h1 {
+#logo {
     font-family: "Bebas Neue";
     font-size: 2rem;
     margin: 1rem 0;
     color: #1a3066;
 }
 
+#foot-logo {
+    font-family: "Bebas Neue";
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: white;
+}
+
 h2 {    
-    font-family: "Roboto";
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color:#1a3066;
+    text-align: center;
 }
 
 p {
-    font-family: "Roboto";
-    font-size: 20px;
+    font-size: 1.05rem;
     margin: 0.5rem 0;
 }
 
 a {
-    font-family: "Roboto";
     text-decoration: none;
     color: black;
     font-size: 1rem;
@@ -67,6 +72,7 @@ button {
     font-size: 1rem;
     line-height: 2rem;
     color: #1a3066;
+    background-color: transparent;
 }
 
 .btn a {
@@ -122,15 +128,15 @@ button {
 
 /* About us */
 .about-us {
-    margin: 0 5% 0 5%;
     height: 40rem;
+    margin: 0 5% 0 5%;
     width: 90%;
 }
 
 .about-us-left {
     width: 40%;
     float: left;
-    height: 100%;
+    height: 38rem;
     background-image: url(Assets/profic.jpg);
     background-size: cover;
     scale: 0.8;
@@ -144,13 +150,18 @@ button {
 
 /* Membership plans  */
 
+.membership {
+    height: 43rem;
+    margin: 0 5% 0 5%;
+}
+
 .membership h2 {
     margin-top: 1rem;
     text-align: center;
 }
 
 .membership-plans {
-    margin: 0 5% 0 5%;
+    /* margin: 0 5% 0 5%; */
     height: 40rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -190,7 +201,7 @@ button {
     display: flex;
     align-items: center;  
     gap: 0.5rem;  
-    font-size: 1rem; 
+    font-size: 0.8rem; 
 }
 
 .fa-circle-arrow-right {
@@ -208,6 +219,123 @@ button {
     height: 3rem;
     line-height: 3rem;
     font-weight: bolder;
+}
+
+/* Training Program */
+
+.tp {
+    margin: 0 5% 0 5%;
+    height: 110rem;
+    margin-top: 1rem;
+}
+
+.tp-container {
+    height: 35rem;
+    margin-top: 2rem;
+    border: 2px solid #f8f8f8;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.tp-r {
+    width: 50%;
+    padding: 0 2rem 0 2rem;
+    background-color: #f6f8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tp-head h2 {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.tp-no-circle {
+    margin: 1rem 0 1rem 0;
+    height: 3rem;
+    width: 3rem;
+    background-color: #484dff;
+}
+
+.tp-no-inner-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    background-color: #1a3066;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.tp-para {
+    margin: 1rem 0 1rem 0;
+}
+
+.tp-para p {
+
+    font-size: 1.5rem;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+#tp-blue {
+    background-color: #1a3066;
+    color: white;
+}
+
+#tp-blue h2,
+#tp-blue p {
+    color: white;
+}
+
+.tp-no {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #484dff;
+}
+
+.tp-l {
+    width: 50%;
+}
+
+.tp-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    scale: 0.7;
+}
+
+/* Gallery */
+.gallery-sec{
+    height: auto;
+    width: 90%;
+    padding-top: 1rem;
+    margin: 0 5% 3rem 5%;
+}
+
+.gallery-container {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    height: 20rem;
+    width: 30%;
+    margin: 1%;
+}
+
+.gallery-img {
+    height: 20rem;
+    width: 30%;
+    background-size: cover;
 }
 
 /* FAQs */
@@ -298,18 +426,54 @@ button {
 
 /* Footer */
 
+footer {
+    background-color: #1a3066;
+}
+
+footer span {
+    color: white;
+    size: 1.5rem;
+}
+
+footer div {
+    margin: 1rem 0 1rem 0;
+}
+
 .footer-sec {
-    margin: 0 5% 2rem 5%;
+    margin: 0 5% 0 5%;
     height: 20rem;
-    display: flex;
+    flex-direction: column;
 }
 
-.footer-left {
-    width: 35%;
-    background-color: bisque;
+.footer-links {
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-right {
-    width: 65%;
-    background-color: beige;
+.footer-links a {
+    color: white;
+}
+
+.footer-quote {
+    margin: -1rem 0 1rem 0;
+}
+
+/* Removing predefined styling */
+.footer-links a:hover {
+    background: none;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: initial;
+    font-weight: normal;
+    scale: 1;
+}
+
+.fa-youtube, 
+.fa-facebook-f,
+.fa-instagram,
+.fa-facebook-messenger {
+    font-size: 1.8rem;
+    color: white;
+    padding: 0 1rem 0 1rem;
 }

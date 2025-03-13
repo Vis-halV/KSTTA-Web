@@ -59,3 +59,42 @@ toggleButtons.forEach(button => {
         faqItem.classList.toggle("show-answer");
     });
 });
+
+const galleryImg = [];
+
+function generateGalleryImages(m, n) {
+    for (let i = m; i <= n; i++) {
+        galleryImg.push(`Assets/gallery/img${i}.jpg`);
+    }
+}
+
+const galleryContainer = document.querySelector('.gallery-container');
+
+generateGalleryImages(1, 6);
+
+updateGallery();
+
+const showMoreButton = document.querySelector('#show-more-btn');
+let showMoreClicked = false;
+
+showMoreButton.addEventListener('click', () => {
+    if (!showMoreClicked) {
+        generateGalleryImages(7, 9);
+        showMoreButton.innerHTML = 'Show Less ';
+        } else {
+        galleryImg.length = 6; // Reset to only the first 6 images
+        showMoreButton.innerHTML = 'Show More ';
+    }
+    showMoreClicked = !showMoreClicked;
+    updateGallery();
+});
+
+function updateGallery() {
+    galleryContainer.innerHTML = '';
+    galleryImg.forEach((imgSrc) => {
+        let imgElement = document.createElement('img');
+        imgElement.classList.add('gallery-img');
+        imgElement.src = imgSrc;
+        galleryContainer.appendChild(imgElement);
+    });
+}
