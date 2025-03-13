@@ -1,0 +1,11 @@
+title: My Jekyll Site
+description: "A Jekyll site hosted on GitHub Pages"
+url: "https://yourusername.github.io"  # Change to your GitHub username
+baseurl: ""  # Keep this empty for user sites, use "/repo-name" for project sites
+theme: minima  # Change if you want a different theme
+
+plugins:
+  - jekyll-feed  # Enables RSS feed
+
+# Optional: Set markdown processor
+markdown: kramdown
